@@ -118,3 +118,34 @@
     white-space: pre;
   }
 }
+
+/* Typing animation for the solution-title heading */
+@layer utilities {
+  .typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 0ch; /* start hidden */
+    border-right: 0.12em solid currentColor; /* caret */
+    animation: typing 3s steps(40, end) 0.2s forwards, blink-caret 0.75s step-end infinite 3.4s;
+  }
+
+  @keyframes typing {
+    from {
+      max-width: 0ch;
+    }
+    to {
+      max-width: 60ch; /* reveal up to comfortable length */
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: currentColor;
+    }
+  }
+}

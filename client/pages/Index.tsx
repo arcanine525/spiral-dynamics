@@ -18,11 +18,11 @@ export default function Index() {
 
   const competencies = [
     "Định hướng rõ ràng",
-    "Khám phá",
+    "Khám phá nghề nghiệp",
     "Ý định duy trì",
     "Tự chủ quyết định",
-    "Kiến thức thị trường",
-    "Phù hợp nghề",
+    "Hiểu biết về thị trường",
+    "Nhận thức độ phù hợp với nghề",
   ];
 
   const faqItems = [
@@ -44,12 +44,65 @@ export default function Index() {
     {
       question: "Spiral Dynamics là gì?",
       answer:
-        "Spiral Dynamics là một mô hình phát triển con người dựa trên 8 hệ thống giá trị (lăng kính), giúp bạn hiểu cách mình nhìn nhận thế giới và các quyết định sự nghiệp của mình.",
+        "Spiral Dynamics là một mô hình phát triển con người dựa trên 8 hệ thống giá trị (lăng kính), giúp bạn hiểu cách mình nhìn nhận thế giới và có cơ sở lựa chọn nghề nghiệp vững chắc hơn.",
     },
     {
       question: "Dữ liệu của tôi được sử dụng như thế nào?",
       answer:
         "Dữ liệu cá nhân của bạn được bảo mật tuyệt đối. Chúng tôi chỉ sử dụng dữ liệu dưới dạng thống kê tổng hợp, không bao giờ chia sẻ thông tin cá nhân của bạn.",
+    },
+  ];
+
+  const howSteps = [
+    {
+      id: 1,
+      title: "Khám phá Hệ Giá Trị",
+      description:
+        "Thực hiện quiz nhanh hoặc khảo sát chuyên sâu với trợ lý tư vấn cá nhân \"Spiral Guide\". Đây là chatbot thông minh đã được \"đào tạo\" bằng bộ dữ liệu vô cùng đáng tin cậy.",
+      url: "https://chatgpt.com/g/g-68ed01f25c8c81918b432f95616b5c19-spiral-guide",
+      cardBg: "bg-gradient-to-br from-spiral-blue/5 to-spiral-turquoise/5",
+      borderClass: "border-spiral-blue/20",
+      badgeBg: "bg-spiral-blue",
+    },
+    {
+      id: 2,
+      title: "Nhận Báo Cáo Phân Tích",
+      description:
+        "Hệ thống tự động phân tích và gửi bạn báo cáo về hệ giá trị cá nhân, nghề nghiệp phù hợp và cách để rèn luyện, nâng cấp dải màu cá nhân. Bạn cũng có thể định vị bản thân trên bảng dữ liệu \"Spiral Data\".",
+      url: "https://lookerstudio.google.com/u/0/reporting/f6fc2e35-27d5-4c73-88d7-57f8c2a2cc68",
+      cardBg: "bg-gradient-to-br from-spiral-orange/5 to-spiral-yellow/5",
+      borderClass: "border-spiral-orange/20",
+      badgeBg: "bg-spiral-orange",
+    },
+    {
+      id: 3,
+      title: "Trải nghiệm Nghề Nghiệp Yêu Thích",
+      description:
+        "Trải nghiệm mini game \"Spiral Choices\", nơi bạn được thử sức xử lý các tình huống nghề nghiệp và xác định nghề nghiệp ấy có phù hợp với sắc màu của bạn hay không.",
+      url: "https://testminigame.my.canva.site/spiralchoices",
+      cardBg: "bg-gradient-to-br from-spiral-green/5 to-spiral-turquoise/5",
+      borderClass: "border-spiral-green/20",
+      badgeBg: "bg-spiral-green",
+    },
+    {
+      id: 4,
+      title: "Xây dựng Chiến Lược Theo Đuổi Đam Mê",
+      description:
+        "Nhận các khuyến nghị thực tế và các bước hành động để theo đuổi lĩnh vực bạn yêu thích. Bạn có thể tìm hiểu chuyên sâu với Notebook LM \"Spiral Tips & Insights\".",
+      url: "https://notebooklm.google.com/notebook/cf690894-6164-4809-805c-68f91b730827",
+      cardBg: "bg-gradient-to-br from-spiral-yellow/5 to-spiral-orange/5",
+      borderClass: "border-spiral-yellow/20",
+      badgeBg: "bg-spiral-yellow",
+    },
+    {
+      id: 5,
+      title: "Kết nối, Chia sẻ và Truyền Cảm Hứng",
+      description:
+        "Trải nghiệm và trở thành một phần của \"Spiral Media\" - nơi sắc màu cá nhân trở thành nguồn cảm hứng cho những sản phẩm hấp dẫn: MV \"The Color in Me\", bộ ảnh \"Spiral Lens\", tạp chí \"Spiral Ways\" và nhiều hơn thế nữa.",
+      url: "https://www.facebook.com/thecolorinmesince2025",
+      cardBg: "bg-gradient-to-br from-spiral-turquoise/5 to-spiral-blue/5",
+      borderClass: "border-spiral-turquoise/20",
+      badgeBg: "bg-spiral-turquoise",
     },
   ];
 
@@ -59,8 +112,8 @@ export default function Index() {
       <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-spiral-yellow to-spiral-turquoise rounded-lg"></div>
-            <span className="font-bold text-lg text-gray-900">Spiral Dynamics</span>
+            <img src="/icon.png" alt="Spiral Horizon" className="w-8 h-8 rounded-lg object-cover" />
+            <span className="font-bold text-lg text-gray-900">Spiral Horizon</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#problem" className="text-gray-600 hover:text-gray-900 transition">
@@ -76,8 +129,8 @@ export default function Index() {
               FAQ
             </a>
           </nav>
-          <button className="px-6 py-2 bg-gradient-to-r from-spiral-blue to-spiral-turquoise text-white rounded-lg font-semibold hover:shadow-lg transition">
-            Tham gia khảo sát
+          <button className="px-6 py-2 bg-gradient-to-r from-spiral-blue to-spiral-turquoise text-white rounded-lg font-semibold hover:shadow-lg transition" onClick={() => window.open('https://chatgpt.com/g/g-68ed01f25c8c81918b432f95616b5c19-spiral-guide')}>
+            Khám phá dãi màu ngay
           </button>
         </div>
       </header>
@@ -94,11 +147,10 @@ export default function Index() {
               Khám Phá Hệ Giá Trị Bản Thân
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
-              Vững Vàng Chọn Lựa Tương Lai Cùng Spiral Dynamics
+              Vững tin theo đuổi đam mê với bản sắc Spiral Dynamics
             </p>
             <p className="text-lg text-gray-500 max-w-3xl mx-auto mb-12">
-              Nền tảng khảo sát và phân tích chuyên sâu giúp học sinh THPT lớp 10-12 định vị bản
-              thân và xây dựng lộ trình sự nghiệp rõ ràng.
+              Hệ sinh thái sản phẩm hướng nghiệp cá nhân hóa thông minh ứng dụng Spiral Dynamics và trí tuệ nhân tạo (AI) dành cho học sinh THPT.
             </p>
 
             {/* Spiral Dynamics Color Preview */}
@@ -116,12 +168,9 @@ export default function Index() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center" onClick={() => window.open('https://www.facebook.com/thecolorinmesince2025')}>
               <button className="px-8 py-4 bg-gradient-to-r from-spiral-blue to-spiral-turquoise text-white rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition transform">
-                Tham Gia Khảo Sát (10 phút)
-              </button>
-              <button className="px-8 py-4 bg-white border-2 border-spiral-blue text-spiral-blue rounded-lg font-bold text-lg hover:bg-blue-50 transition">
-                Xem Mẫu Báo Cáo Cá Nhân
+                Tìm hiểu thêm về chúng tôi
               </button>
             </div>
           </div>
@@ -144,8 +193,8 @@ export default function Index() {
             {[
               {
                 icon: "❓",
-                title: "Mơ hồ về định hướng tương lai",
-                description: "Không biết chính xác mình muốn theo đuổi điều gì sau khi tốt nghiệp",
+                title: "Mơ hồ về thị trường nghề nghiệp",
+                description: "Chưa hiểu rõ về đặc thù nghề nghiệp, cơ sở đào tạo và cơ hội việc làm sau khi ra trường",
               },
               {
                 icon: "😰",
@@ -160,7 +209,7 @@ export default function Index() {
               },
               {
                 icon: "🎯",
-                title: "Không biết mình phù hợp với gì",
+                title: "Không biết mình phù hợp với điều gì",
                 description:
                   "Khó nhận diện được điểm mạnh, sở thích thực sự và lĩnh vực nghề phù hợp",
               },
@@ -198,10 +247,10 @@ export default function Index() {
               <div className="text-5xl mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">🌀</div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Hiểu Hệ Giá Trị Bản Thân</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Khám phá 8 lăng kính (beige, purple, red, blue, orange, green, yellow, turquoise)
-                của Spiral Dynamics - cách bạn nhìn nhận thế giới, quyết định động lực và lựa
-                chọn sự nghiệp của mình.
+                Khám phá dải màu Spiral Dynamics với 8 gam màu: beige, purple, red, blue, orange, green, yellow, turquoise.
+                Dãy màu của bạn là độc nhất vô nhị và sẽ hé lộ thế giới tinh thần cũng như con đường tương lai của riêng bạn.
               </p>
+              <div className="grid grid-cols-2 gap-6">
               <div className="space-y-3">
                 {spiralColors.slice(0, 4).map((color) => (
                   <div key={color.name} className="flex items-center gap-3">
@@ -215,17 +264,30 @@ export default function Index() {
                   </div>
                 ))}
               </div>
+              <div className="space-y-3">
+                {spiralColors.slice(4, 8).map((color) => (
+                  <div key={color.name} className="flex items-center gap-3">
+                    <div
+                      className="w-3 h-3 rounded-full"
+                      style={{ backgroundColor: color.value }}
+                    ></div>
+                    <span className="font-semibold text-gray-700">
+                      {color.name}: {color.meaning}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              </div>
             </div>
 
             {/* 6 Competencies */}
             <div className="group bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
               <div className="text-5xl mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">📊</div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Đo Lường 6 Năng Lực Hướng Nghiệp
+                Kết nối với Năng Lực Hướng Nghiệp
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Khảo sát đo lường toàn diện 6 năng lực quan trọng để giúp bạn có cái nhìn rõ ràng
-                về khả năng và sẵn sàng:
+                Đo lường toàn diện năng lực hướng nghiệp và phân tích trong mối tương quan với hệ giá trị cá nhân của bạn.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {competencies.map((comp, idx) => (
@@ -247,107 +309,33 @@ export default function Index() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Cách Thức Hoạt Động
             </h2>
-            <p className="text-xl text-gray-600">3 bước đơn giản để tìm ra định hướng sự nghiệp</p>
+            <p className="text-xl text-gray-600">5 bước đơn giản để tìm ra định hướng sự nghiệp.<br/>Click vào từng bước để tìm hiểu chi tiết và trải nghiệm nhé!</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 relative">
-            {/* Step 1 */}
-            <div className="group bg-gradient-to-br from-spiral-blue/10 to-spiral-turquoise/10 p-10 rounded-2xl border-2 border-spiral-blue/20 hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="w-16 h-16 bg-spiral-blue rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">
-                1
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Hoàn Thành Khảo Sát</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Dành 10-12 phút trả lời các câu hỏi đa chiều về giá trị, hành vi và mong muốn của
-                bạn. Quá trình dễ dàng và không áp lực.
-              </p>
-            </div>
-
-            {/* Step 2 */}
-            <div className="group bg-gradient-to-br from-spiral-orange/10 to-spiral-yellow/10 p-10 rounded-2xl border-2 border-spiral-orange/20 hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="w-16 h-16 bg-spiral-orange rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">
-                2
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Nhận Báo Cáo Phân Tích</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Hệ thống tự động phân tích và gửi bạn báo cáo cá nhân hóa, trực quan hóa hồ sơ
-                Spiral Dynamics và 6 năng lực hướng nghiệp.
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="group bg-gradient-to-br from-spiral-green/10 to-spiral-turquoise/10 p-10 rounded-2xl border-2 border-spiral-green/20 hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="w-16 h-16 bg-spiral-green rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">
-                3
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Khám Phá Lộ Trình Gợi Ý</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Nhận các khuyến nghị về ngành nghề, hoạt động trải nghiệm và nguồn lực hỗ trợ
-                phù hợp nhất với hồ sơ giá trị của bạn.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Demo Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Xem Trước Kết Quả
-            </h2>
-            <p className="text-xl text-gray-600">
-              Đây là những gì bạn sẽ nhận được sau khi hoàn thành khảo sát
-            </p>
-          </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="bg-gray-100 rounded-xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">📈</div>
-                  <p className="text-gray-600 font-semibold">Biểu đồ 8 Màu Spiral Dynamics</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 relative">
+            {howSteps.map((step) => {
+              return (
+                <div
+                  key={step.id}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => window.open(step.url)}
+                  onKeyDown={(e) => {
+                    // open on Enter for keyboard users
+                    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+                    if ((e as any).key === "Enter") window.open(step.url);
+                  }}
+                  className={`group ${step.cardBg} p-8 rounded-2xl border-2 ${step.borderClass} hover:shadow-2xl hover:scale-105 transform transition duration-300 cursor-pointer`}
+                  aria-label={`Open: ${step.title}`}
+                >
+                  <div className={`${step.badgeBg} w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1`}>
+                    {step.id}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
                 </div>
-              </div>
-              <p className="text-gray-600 mt-4">Hiển thị cấu trúc giá trị của bạn một cách trực quan</p>
-            </div>
-
-            <div className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="bg-gray-100 rounded-xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">🎯</div>
-                  <p className="text-gray-600 font-semibold">Đánh giá 6 Năng Lực</p>
-                </div>
-              </div>
-              <p className="text-gray-600 mt-4">Điểm mạnh và lĩnh vực phát triển của bạn</p>
-            </div>
-
-            <div className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="bg-gray-100 rounded-xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">☁️</div>
-                  <p className="text-gray-600 font-semibold">Word Cloud Ngành Nghề</p>
-                </div>
-              </div>
-              <p className="text-gray-600 mt-4">Các ngành nghề phù hợp nhất cho bạn</p>
-            </div>
-
-            <div className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <div className="bg-gray-100 rounded-xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1">📊</div>
-                  <p className="text-gray-600 font-semibold">Dashboard Phân Tích</p>
-                </div>
-              </div>
-              <p className="text-gray-600 mt-4">Một cái nhìn toàn diện về hồ sơ của bạn</p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <button className="px-8 py-4 bg-spiral-blue text-white rounded-lg font-bold text-lg hover:shadow-xl transition">
-              Khám Phá Dashboard Mẫu
-            </button>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -408,8 +396,7 @@ export default function Index() {
                   {[
                     "Thấu hiểu con cái - khám phá giá trị thực sự và năng lực của con",
                     "Đồng hành hiệu quả - hỗ trợ con với những gợi ý phù hợp",
-                    "Có cơ sở trao đổi - cuộc hội thoại gia đình dựa trên dữ liệu",
-                    "Giảm lo lắng - biết rằng con đang trên con đường đúng",
+                    "An tâm khi biết rằng con có cơ sở vững chắc cho lựa chọn tương lai của mình",
                   ].map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-spiral-turquoise flex-shrink-0 mt-1" />
@@ -426,9 +413,8 @@ export default function Index() {
                 <ul className="space-y-4">
                   {[
                     "Có dữ liệu tổng quan - hiểu được hồ sơ giá trị của toàn bộ học sinh",
-                    "Thiết kế chương trình hướng nghiệp trúng đích - dựa trên nhu cầu thực tế",
-                    "Nâng cao hiệu quả tư vấn - các giáo viên có thông tin chi tiết",
-                    "Đo lường kết quả - theo dõi sự phát triển của học sinh qua thời gian",
+                    "Thiết kế chương trình hướng nghiệp phù hợp, hiệu quả",
+                    "Nâng cao hiệu quả tư vấn hướng nghiệp theo hướng cá nhân hóa",
                   ].map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-spiral-turquoise flex-shrink-0 mt-1" />
@@ -445,78 +431,37 @@ export default function Index() {
       {/* B2B Solutions for Schools */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 solution-title">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Giải Pháp Cho Nhà Trường
+              500+ Học sinh THPT Đã Tin Dùng
+              <br />
+              Đánh giá tích cực từ Các Chuyên Gia Tâm Lý, Giáo Dục và Công Nghệ Thông Tin
             </h2>
             <p className="text-xl text-gray-600">
-              Chúng tôi cung cấp các gói giải pháp toàn diện cho tổ chức giáo dục
+              <span className="typing">
+              Bạn đã sẵn sàng trải nghiệm "Spiral Horizon" cùng chúng tôi chưa?
+              </span>
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Gói Báo Cáo Tổng Hợp",
-                description: "Khảo sát và báo cáo phân tích theo khối/lớp",
-                features: [
-                  "Khảo sát cho toàn bộ học sinh",
-                  "Báo cáo tổng hợp theo lớp/khối",
-                  "Hỗ trợ cơ bản",
-                ],
-                color: "spiral-blue",
-              },
-              {
-                title: "Gói Dashboard Tương Tác",
-                description: "Cung cấp dashboard để nhà trường tự phân tích sâu",
-                features: [
-                  "Toàn bộ báo cáo tổng hợp",
-                  "Dashboard tương tác trực tuyến",
-                  "Hỗ trợ nâng cao",
-                  "Cập nhật hàng tháng",
-                ],
-                color: "spiral-orange",
-              },
-              {
-                title: "Gói Tư Vấn & Workshop",
-                description: "Tổ chức các buổi chia sẻ, tư vấn dựa trên kết quả",
-                features: [
-                  "Toàn bộ gói dashboard",
-                  "3-5 buổi workshop/tư vấn",
-                  "Đào tạo giáo viên tư vấn",
-                  "Hỗ trợ toàn diện 24/7",
-                ],
-                color: "spiral-green",
-              },
-            ].map((pkg, idx) => (
-              <div key={idx} className="group bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{pkg.title}</h3>
-                <p className="text-gray-600 mb-6">{pkg.description}</p>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle2 className={`w-5 h-5 text-spiral-${pkg.color} flex-shrink-0 mt-1 transform transition duration-300 group-hover:scale-110 group-hover:-translate-y-1`} />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  className={`w-full py-3 rounded-lg font-bold transition`}
-                  style={{
-                    backgroundColor: pkg.color === "spiral-blue" ? "#3498DB" :
-                                    pkg.color === "spiral-orange" ? "#E67E22" : "#2ECC71",
-                    color: "white"
-                  }}
-                >
-                  Tìm Hiểu Thêm
-                </button>
-              </div>
-            ))}
+          {/* Embedded Reel/video between the text and the CTA button */}
+          <div className="mt-8 flex justify-center">
+            <iframe
+              title="Spiral Horizon Reel"
+              loading="lazy"
+              src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
+                "https://www.facebook.com/reel/677165481724622"
+              )}&show_text=1&width=600`}
+              className="w-full max-w-3xl h-64 md:h-96 rounded-lg"
+              style={{ border: "none" }}
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen
+            />
           </div>
 
           <div className="text-center mt-12">
-            <button className="px-10 py-4 bg-spiral-blue text-white rounded-lg font-bold text-lg hover:shadow-xl transition">
-              Liên Hệ Hợp Tác
+            <button className="px-10 py-4 bg-spiral-blue text-white rounded-lg font-bold text-lg hover:shadow-xl transition" onClick={() => window.open('https://www.facebook.com/thecolorinmesince2025')}>
+              Tìm hiểu thêm về chúng tôi
             </button>
           </div>
         </div>
@@ -589,13 +534,13 @@ export default function Index() {
       {/* CTA Section Before Footer */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-spiral-blue to-spiral-turquoise">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gradient-to-r mb-6">
             Sẵn Sàng Khám Phá Hệ Giá Trị Của Bạn?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
             Tham gia khảo sát ngay hôm nay và nhận báo cáo phân tích cá nhân trong vài phút
           </p>
-          <button className="px-10 py-4 bg-white text-spiral-blue rounded-lg font-bold text-lg hover:shadow-2xl transition">
+          <button className="px-10 py-4 bg-white text-spiral-blue rounded-lg font-bold text-lg hover:shadow-2xl transition" onClick={() => window.open('https://chatgpt.com/g/g-68ed01f25c8c81918b432f95616b5c19-spiral-guide')}>
             Bắt Đầu Khảo Sát Miễn Phí
           </button>
         </div>
@@ -604,97 +549,16 @@ export default function Index() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-spiral-yellow to-spiral-turquoise rounded-lg"></div>
-                <span className="font-bold text-lg text-white">Spiral Dynamics</span>
-              </div>
-              <p className="text-sm text-gray-400">
-                Nền tảng định hướng sự nghiệp dựa trên khoa học cho học sinh THPT
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-white mb-4">Liên Kết</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Trang Chủ
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Về Chúng Tôi
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Liên Hệ
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-white mb-4">Pháp Lý</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Chính Sách Bảo Mật
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Điều Khoản Sử Dụng
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Chính Sách Cookie
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-white mb-4">Liên Lạc</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="mailto:contact@spiraldynamics.vn" className="hover:text-white transition">
-                    contact@spiraldynamics.vn
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+84901234567" className="hover:text-white transition">
-                    +84 (90) 123-4567
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-800">
             <p className="text-sm text-gray-400">
-              © 2024 Spiral Dynamics. Tất cả quyền được bảo lưu.
+              © 2025 Spiral Horizon. Tất cả quyền được bảo lưu.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="https://www.facebook.com/thecolorinmesince2025" className="text-gray-400 hover:text-white transition">
                 <span className="sr-only">Facebook</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12z" />
-                </svg>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <span className="sr-only">Twitter</span>
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8.29 20c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-7.104 3.756 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <span className="sr-only">LinkedIn</span>
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
             </div>
