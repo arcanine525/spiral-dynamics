@@ -130,7 +130,7 @@ export default function Index() {
             </a>
           </nav>
           <button className="px-6 py-2 bg-gradient-to-r from-spiral-blue to-spiral-turquoise text-white rounded-lg font-semibold hover:shadow-lg transition" onClick={() => window.open('https://chatgpt.com/g/g-68ed01f25c8c81918b432f95616b5c19-spiral-guide')}>
-            Khám phá dãi màu ngay
+            Khám phá dải màu ngay
           </button>
         </div>
       </header>
